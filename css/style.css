@@ -90,16 +90,14 @@ header h1 {
 }
 
 span {
-  display: inline-block;
-  font-size: 13px;
-}
-
-main label {
+  display: inline-flex;
   font-size: 13px;
 }
 
 #forgotPw {
   color: #ab79e2;
+  display: inline-flex;
+  font-size: 13px;
 }
 
 .signIn {
