@@ -29,9 +29,8 @@ body {
 
 .loginBox-left {
   background-image: linear-gradient(to left top, #c965d7, #ab79e2, #9088e4, #7c93e0, #729bd6);
-  
   position: relative;
-  width: 70%;
+  width: 60%;
   height: 500px;
   padding: 50px;
   display: flex;
@@ -42,12 +41,14 @@ body {
   position: absolute;
   top: 40%;
   color: #fff;
+  font-size: 35px;
 }
 
 .loginBox-left p {
   position: absolute;
   top: 50%;
   color: #fff;
+  margin-left: 5px;
 }
 
 .loginBox-rignt {
@@ -61,7 +62,13 @@ body {
 header h1 {
   position: relative;
   color: #646464;
-  top: 65%;
+  top: 80%;
+  font-size: 28px;
+}
+
+main {
+  display: block;
+  justify-content: space-evenly;
 }
 
 #text-field {
@@ -83,22 +90,31 @@ header h1 {
   text-align: center;
 }
 
+.under-password {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+
 #check-bt {
   display: inline;
   justify-content: left;
   padding: 0;
   width: 15px;
+  margin-top: -3px;
 }
 
 span {
   display: inline-flex;
   font-size: 13px;
+  margin-left: -30px;
 }
 
 #forgotPw {
   color:#ab79e2;
   display: inline-flex;
   font-size: 13px;
+  cursor: pointer;
 }
 
 .signIn {
@@ -111,10 +127,11 @@ span {
   font-weight: bold;
   font-size: 15px;
   margin-top: 20px;
+  cursor: pointer;
 }
 
 footer {
-  margin-top: -20px;
+  margin-top: -30px;
   font-size: 13px;
   display: flex;
   justify-content: center;
@@ -122,4 +139,5 @@ footer {
 
 footer a{
   text-decoration: none;
+  color:#ab79e2;
 }
