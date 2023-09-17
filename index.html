@@ -11,32 +11,40 @@
 <body>
   <div class="container">
     <div class="login-form">
+      <!-- container leftside -->
       <div class="loginBox-left">
         <h1>Welcome Back!</h1>
         <p>You can sign in to access with your<br> existing account.</p>
       </div>
-      <div class="loginBox-rignt">
+      <!-- container rightside -->
+      <div class="loginBox-right">
+        <!-- header -->
         <header>
           <h1>Sign In</h1>
         </header>
         <main>
-          <input type="text" name="email" id="text-field" placeholder="Username or email">
-          <input type="password" name="password" id="password-field" placeholder="Password">
+          <!-- login form -->
+          <form id="loginForm">
+            <input type="text" name="username" id="user-id" placeholder="Username or email">
+            <input type="password" name="password" id="user-pw" placeholder="Password">
           <div class="under-password">
-            <input type="checkbox" id="checkbox" checked>
+            <input type="checkbox" id="checkbox">
             <label for="checkbox"><i class="fa-solid fa-check fa-xs"></i></label>
             <lable for="checkbox">
               <span>Remember me</span>
             </lable>&nbsp;
             <label id="forgotPw"><a href="">Forgot password?</a></label>
           </div>
-          <button class="signIn">Sign In</button>
+            <input type="submit" value="Sign-in" id="sign-in">
+          </form>
         </main>
+        <!-- footer -->
         <footer>
           <label id="footer-label">New here?<a href="">&nbsp;Create an Account</a></label>
         </footer>
     </div>
   </div>
+  <script src="script.js"></script>
   <script src="https://kit.fontawesome.com/b32ebc7f13.js" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -55,7 +55,7 @@ body {
   margin-left: 5px;
 }
 
-.loginBox-rignt {
+.loginBox-right {
   flex-wrap: wrap;
   background-color: #fff;
   display: grid;
@@ -76,7 +76,7 @@ main {
   justify-content: space-evenly;
 }
 
-#text-field {
+#user-id {
   width: 100%;
   height: 45px;
   border: none;
@@ -86,7 +86,22 @@ main {
   text-align: center;
 }
 
-#password-field {
+input:focus {
+  outline-color:#b1ace9;
+  color: transparent;
+  text-shadow: 0 0 0 #000;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+	transition: background-color 5000s ease-in-out 0s;
+  -webkit-transition: background-color 9999s ease-out;
+  -webkit-box-shadow: 0 0 0px 1000px #ebebeb inset !important;
+}
+
+#user-pw {
   width: 100%;
   height: 45px;
   border: none;
@@ -109,7 +124,7 @@ input[type="checkbox"] + label {
   width: 17px;
   height: 17px;
   display: inline-flex;
-  border: 2px solid #ccb9df;
+  border: 2px solid #d1a3ff;
   border-radius: 5px;
   cursor: pointer;
 }
@@ -118,25 +133,26 @@ input[type="checkbox"]:checked + label {
   width: 17px;
   height: 17px;
   display: inline-flex;
-  background-color: #ccb9df;
-  border: 2px solid #ccb9df;
+  background-color: #d1a3ff;
   border-radius: 5px;
   cursor: pointer;
 }
 
 .fa-check {
   margin: 5.5px 1.5px 0;
-  color: #413a86;
+  color: #ffffff;
 }
 
 
 span {
   position: relative;
   font-size: 0.8rem;
-  margin-left: -15px;
+  margin-left: -23px;
+  margin-top: 0;
 }
 
 #forgotPw {
+  margin-top: 0;
   display: inline-flex;
   font-size: 0.8rem;
   cursor: pointer;
@@ -148,7 +164,7 @@ span {
 }
 
 
-.signIn {
+#sign-in {
   background-image: linear-gradient(to right bottom, #c965d7, #ab79e2, #9088e4, #7c93e0, #729bd6);
   color: #fff;
   width: 100%;
@@ -186,12 +202,12 @@ footer a{
   .loginBox-left {
     display: none;
   }
-  .loginBox-rignt {
+  .loginBox-right {
     width: 25rem;
   }
   span {
   position: relative;
   font-size: 0.8rem;
-  margin-left: -35px;
+  margin-left: -40px;
   }
 }
