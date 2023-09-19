@@ -111,6 +111,32 @@ input:-webkit-autofill:active {
   text-align: center;
 }
 
+.container > div .password_eye {
+  display: block;
+  height: 40px;
+  text-align: left;
+  padding-left: 70px;
+  padding-top: 10px;
+  position: relative;
+}
+
+.container > div .password_eye .btn {
+  position: absolute;
+  right: 15px;
+  bottom: 50px;
+  width: 40px;
+  height: 25px;
+  background: transparent;
+  border: 0;
+  border-radius: 2px;
+  cursor: pointer;
+  outline: none;
+}
+
+.container > div .password_eye .btn:hover {
+  color: #fff;
+}
+
 .under-password {
   display: flex;
   justify-content: space-between;
@@ -163,7 +189,7 @@ span {
   text-decoration: none;
 }
 
-#sign-in {
+.sigin_btn {
   background-image: linear-gradient(to right bottom, #c965d7, #ab79e2, #9088e4, #7c93e0, #729bd6);
   color: #fff;
   width: 100%;

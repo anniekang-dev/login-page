@@ -25,22 +25,22 @@
         <main>
           <!-- login form -->
           <form id="loginForm">
-            <input type="text" name="username" id="user-id" placeholder="Username or email">
-            <input type="password" name="password" id="user-pw" placeholder="Password">
+            <input type="text" name="username" id="user-id" placeholder="Username or email" required>
+            <input type="password" name="password" id="user-pw" placeholder="Password" required>
           <div class="under-password">
             <input type="checkbox" id="checkbox">
             <label for="checkbox"><i class="fa-solid fa-check fa-xs"></i></label>
             <lable for="checkbox">
               <span>Remember me</span>
             </lable>&nbsp;
-            <label id="forgotPw"><a href="">Forgot password?</a></label>
+            <label id="forgotPw"><a href="#">Forgot password?</a></label>
           </div>
-            <input type="submit" value="Sign-in" id="sign-in">
+            <button class="sigin_btn" type="submit">Sign in</button>
           </form>
         </main>
         <!-- footer -->
         <footer>
-          <label id="footer-label">New here?<a href="">&nbsp;Create an Account</a></label>
+          <label id="footer-label">Don't have an account?<a href="#">&nbsp;Register</a></label>
         </footer>
     </div>
   </div>

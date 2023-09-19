@@ -76,6 +76,7 @@ main {
   justify-content: space-evenly;
 }
 
+
 #user-id {
   width: 100%;
   height: 45px;
@@ -116,11 +117,11 @@ input:-webkit-autofill:active {
   margin-top: 5px;
 }
 
-input[type="checkbox"] {
+input[type=checkbox] {
     display: none;
 }
 
-input[type="checkbox"] + label {
+input[type=checkbox] + label {
   width: 17px;
   height: 17px;
   display: inline-flex;
@@ -129,7 +130,7 @@ input[type="checkbox"] + label {
   cursor: pointer;
 }
 
-input[type="checkbox"]:checked + label {
+input[type=checkbox]:checked + label {
   width: 17px;
   height: 17px;
   display: inline-flex;
@@ -164,7 +165,7 @@ span {
 }
 
 
-#sign-in {
+.sigin_btn {
   background-image: linear-gradient(to right bottom, #c965d7, #ab79e2, #9088e4, #7c93e0, #729bd6);
   color: #fff;
   width: 100%;
