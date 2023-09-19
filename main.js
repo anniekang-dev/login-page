@@ -1,5 +1,6 @@
-// show and hide password
-function eyeIcon() {
+let eyeIcon = function(icon) {
+  icon.classList.toggle("fa-eye");
+  
   let pwShowHide = document.getElementById("user-pw");
              
   if (pwShowHide.type === "password") {
