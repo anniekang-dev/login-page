@@ -25,6 +25,18 @@ body {
   align-items: center;
   border-radius: 30px;
   overflow: hidden;
+  transition: height 0.2s ease;
+}
+
+.signup-form {
+  width: auto;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  overflow: hidden;
+  transition: height 0.2s ease;
 }
 
 .loginBox-left {
@@ -53,6 +65,8 @@ body {
   top: 48%;
   color: #fff;
   margin-left: 5px;
+  margin-top: 2px;
+  letter-spacing: 0.2px;
 }
 
 .loginBox-right {
@@ -61,32 +75,73 @@ body {
   display: grid;
   width: 45%;
   height: 500px;
-  padding: 40px;
+  padding: 0 40px 0 40px;
 }
 
-header h1 {
-  position: relative;
+.loginBox-right header{
+  display: flex;
+  margin-top: auto;
+}
+
+.loginBox-right h1 {
   color: #646464;
-  top: 80%;
+  font-size: 2rem;
+  margin-bottom: 5px;
+}
+
+
+.loginBox-left h1 {
+  position: absolute;
+  top: 40%;
+  color: #fff;
   font-size: 2rem;
 }
 
+.loginBox-left p {
+  position: absolute;
+  top: 48%;
+  color: #fff;
+  margin-left: 5px;
+  margin-top: 2px;
+  letter-spacing: 0.2px;
+}
+
+.signupBox-right {
+  flex-wrap: wrap;
+  background-color: #fff;
+  display: grid;
+  width: 45%;
+  height: 500px;
+  padding: 0 40px 0 40px; 
+}
+
+.signupBox-right header{
+  display: flex;
+  margin-top: auto;
+}
+
+.signupBox-right h1 {
+  color: #646464;
+  font-size: 2rem;
+  margin-bottom: 5px;
+  margin-top: -90px;
+}
+
 main {
-  display: block;
-  justify-content: space-evenly;
+  height: 210px;
 }
 
 .input-box {
   position: relative;
 }
 
-#user-id {
+.input-box input {
   width: 100%;
   height: 45px;
   border: none;
   background-color: #ebebeb;
-  margin: 30px 0 5px;
-  padding-left: 15px; 
+  padding-left: 15px;
+  margin-top: 0.5rem;
   text-align: left;
 }
 
@@ -104,21 +159,36 @@ input:-webkit-autofill:active {
   -webkit-box-shadow: 0 0 0px 1000px #ebebeb inset !important;
 }
 
-#user-pw {
+.input-box i {
+  position: absolute;
+  font-size: 15px;
+  right: 16px;
+  transform: translateY(24px);
+  top: 50%;
+  color: #646464;
+  cursor: pointer;
+}
+
+.signup-input-box {
+  position: relative;
+  margin-top: -45px;
+}
+
+.signup-input-box input {
   width: 100%;
   height: 45px;
   border: none;
   background-color: #ebebeb;
-  margin-bottom: 5px;
-  padding-left: 15px; 
+  padding-left: 15px;
+  margin-top: 0.5rem;
   text-align: left;
 }
 
-.fa-regular {
+.signup-input-box i {
   position: absolute;
   font-size: 15px;
-  right: 15px;
-  transform: translateY(30px);
+  right: 16px;
+  transform: translateY(24px);
   top: 50%;
   color: #646464;
   cursor: pointer;
@@ -126,8 +196,7 @@ input:-webkit-autofill:active {
 
 .under-password {
   display: flex;
-  justify-content: space-between;
-  margin-top: 5px;
+  margin-top: 10px;
 }
 
 input[type=checkbox] {
@@ -135,48 +204,41 @@ input[type=checkbox] {
 }
 
 input[type=checkbox] + label {
-  width: 17px;
-  height: 17px;
-  display: inline-flex;
+  display: flex;
+  top: 10px;
+  width: 16px;
+  height: 16px;
   border: 2px solid #d1a3ff;
   border-radius: 5px;
   cursor: pointer;
 }
 
 input[type=checkbox]:checked + label {
-  width: 17px;
-  height: 17px;
-  display: inline-flex;
+  display: flex;
+  width: 16px;
+  height: 16px;
   background-color: #d1a3ff;
   border-radius: 5px;
   cursor: pointer;
 }
 
 .fa-check {
-  margin: 5.5px 1.5px 0;
+  margin: 5.5px 0 0 1.6px;
   color: #ffffff;
 }
 
-
-span {
-  position: relative;
-  font-size: 0.8rem;
-  margin-left: -23px;
-  margin-top: 0;
-}
-
-#forgotPw {
-  margin-top: 0;
+.remember-forgot {
+  font-size: 0.75rem;
   display: inline-flex;
-  font-size: 0.8rem;
-  cursor: pointer;
+  top: 0;
+  margin-left: 2%;
+  gap: 4rem;
 }
 
-#forgotPw a{
+.remember-forgot a{
   color:#ab79e2;
   text-decoration: none;
 }
-
 
 .sigin_btn {
   background-image: linear-gradient(to right bottom, #c965d7, #ab79e2, #9088e4, #7c93e0, #729bd6);
@@ -191,22 +253,25 @@ span {
   cursor: pointer;
 }
 
-footer {
-  margin-top: -30px;
+.link-register {
+  height: auto;
   font-size: 13px;
   display: flex;
   justify-content: center;
+  margin-top: 20px;
 }
 
-footer a{
+.link-register a {
   text-decoration: none;
   color:#ab79e2;
 }
 
 @media screen and (max-width:960px) {
-  span {
-  margin-left: -1rem;
-  }
+.remember-forgot {
+  display: inline-flex;
+  margin-left: 2%;
+  gap: 3.1rem;
+}
 }
 
 @media screen and (max-width:926px) {
@@ -219,9 +284,12 @@ footer a{
   .loginBox-right {
     width: 25rem;
   }
-  span {
-  position: relative;
-  font-size: 0.8rem;
-  margin-left: -40px;
+  .signupBox-right {
+    width: 25rem;
   }
+  .remember-forgot {
+    display: inline-flex;
+    margin-left: 2%;
+    gap: 5.9rem;
+  }  
 }

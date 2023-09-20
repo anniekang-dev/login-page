@@ -26,26 +26,59 @@
           <!-- login form -->
           <form id="loginForm">
             <div class="input-box">
-              <input type="text" name="username" id="user-id" placeholder="Username or email" required>
-              <input type="password" name="password" id="user-pw" placeholder="Password" required>
+              <input type="text" name="username" id="user-id" placeholder="Username or Email" required>
+              <input type="password" name="password" id="user-pw" class ="password" placeholder="Password" required>
               <i class="fa-regular fa-eye" onclick="eyeIcon(this)"></i>
             </div>
           <div class="under-password">
             <input type="checkbox" id="checkbox">
-            <label for="checkbox"><i class="fa-solid fa-check fa-xs"></i></label>
-            <lable for="checkbox">
-              <span>Remember me</span>
-            </lable>&nbsp;
+            <label class="" for="checkbox"><i class="fa-solid fa-check fa-xs"></i></label>
+            <div class="remember-forgot">
+            <span id="remember">Remember me&nbsp;</span>
             <label id="forgotPw"><a href="#">Forgot password?</a></label>
+            </div>
           </div>
             <button class="sigin_btn" type="submit">Sign in</button>
           </form>
+          <label class="link-register">Don't have an account?<a href="#" class="signup-link">&nbsp;Register</a></label>
         </main>
-        <!-- footer -->
-        <footer>
-          <label id="footer-label">Don't have an account?<a href="#">&nbsp;Register</a></label>
-        </footer>
     </div>
+  </div>
+  <!-- signup form -->
+  <div class="signup-form">
+    <!-- container leftside -->
+    <div class="loginBox-left">
+      <h1>Welcome!</h1>
+      <p>Create your account by filling this form.</p>
+    </div>
+    <!-- container rightside -->
+    <div class="signupBox-right">
+      <!-- header -->
+      <header>
+        <h1>Sign Up</h1>
+      </header>
+      <main>
+        <!-- login form -->
+        <form id="loginForm">
+          <div class="signup-input-box">
+            <input type="text" name="username" id="user-id" placeholder="Username" required>
+            <input type="text" name="username" id="user-id" placeholder="Email" required>
+            <input type="password" name="password" id="user-pw" class ="password" placeholder="Enter Password" required>
+            <i class="fa-regular fa-eye" onclick="eyeIcon(this)"></i>
+            <input type="password" name="password" id="user-pw" class ="password" placeholder="Confirm Password" required>
+          </div>
+        <div class="under-password">
+          <input type="checkbox" id="checkbox">
+          <label class="" for="checkbox"><i class="fa-solid fa-check fa-xs"></i></label>
+          <div class="remember-forgot">
+          <span id="remember">Remember me&nbsp;</span>
+          <label id="forgotPw"><a href="#">Forgot password?</a></label>
+          </div>
+        </div>
+          <button class="sigin_btn" type="submit">Sign in</button>
+        </form>
+        <label class="link-register">Already have an account?<a href="#" class="signin-link">&nbsp;Sign in</a></label>
+      </main>
   </div>
   <script src="main.js"></script>
   <script src="https://kit.fontawesome.com/b32ebc7f13.js" crossorigin="anonymous"></script>
